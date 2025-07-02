@@ -1,0 +1,243 @@
+.mainPage {
+    width: 100%;
+}
+html{
+    scroll-snap-type: y none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.summaryDiv {
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+/* Projects Section */
+
+.projectsDiv {
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.projectsBox {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    padding: 2rem;
+    transform: scale(0);
+    transform: translateX(-50vw);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.projectsBox.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.projectsText {
+    padding: 2rem;
+    transform: scale(0);
+    transform: translateX(50vw);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.projectsText.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Experience Section */
+
+.experienceDiv {
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.experienceBox {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    transform: scale(0);
+    transform: translateX(50vw);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.experienceBox.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.experienceText {
+    padding: 2rem;
+    transform: scale(0);
+    transform: translateX(-50vw);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.experienceText.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* Skills Section */
+
+.skillsDiv {
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.skillsBox {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    transform: scale(0);
+    transform: translateX(-50vw);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.skillsBox.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.skillsText {
+    padding: 2rem;
+    transform: scale(0);
+    transform: translateX(50vw);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.skillsText.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Education Section */
+
+.educationDiv {
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.educationBox {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid purple;
+    transform: scale(0);
+    transform: translateX(50vw);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.educationBox.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.educationText {
+    padding: 2rem;
+    transform: scale(0);
+    transform: translateX(-50vw);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.educationText.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.title{
+    margin: 0.5rem;
+    font-size: 4rem;
+}
+
+.nameText {
+    text-align: right;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+    opacity: 50%;
+}
+
+.downArrow {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    animation: bob 2s ease-out infinite;
+    position: absolute;
+    left: 50%;
+    top: 90vh;
+    
+}
+
+
+
+@keyframes bob {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
