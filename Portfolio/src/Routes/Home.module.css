@@ -2,7 +2,7 @@
     width: 100%;
 }
 html{
-    scroll-snap-type: y none;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -221,23 +221,4 @@ html{
     margin: 0;
     font-size: 2rem;
     opacity: 50%;
-}
-
-.downArrow {
-    width: 50px;
-    height: 50px;
-    filter: invert(1);
-    animation: bob 2s ease-out infinite;
-    position: absolute;
-    left: 50%;
-    top: 90vh;
-    
-}
-
-
-
-@keyframes bob {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
-    100% { transform: translateY(0); }
 }

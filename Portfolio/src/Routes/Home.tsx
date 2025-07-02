@@ -26,6 +26,7 @@ function Home() {
           }
         });
       });
+
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -43,11 +44,6 @@ function Home() {
         <div>
           <h1 className={styles.title}>Welcome to my Portfolio</h1>
           <h2 className={styles.nameText}>Tommy Segovia</h2>
-            <img
-                src="/public/assets/down_arrow.png"
-                alt="Scroll Down"
-                className={styles.downArrow}
-            />
         </div>
       </div>
 

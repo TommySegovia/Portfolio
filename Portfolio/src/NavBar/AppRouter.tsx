@@ -5,11 +5,13 @@ import Projects from '../Routes/Projects';
 import Education from '../Routes/Education';
 import Experience from '../Routes/Experience';
 import Skills from '../Routes/Skills';
+import Arrows from '../UI/Arrows';
 
 function AppRouter() {
   return (
     <Router>
       <NavBar />
+      <Arrows />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />

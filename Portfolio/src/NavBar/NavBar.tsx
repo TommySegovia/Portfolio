@@ -1,13 +1,12 @@
-
 import "./NavBar.css";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar(){
     return(
         <nav>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
+            <ul className="navbar-list">
+                <li className="navbar-home">
+                    <Link to="/"><img src="/public/assets/home.png" alt="" className="home-icon"/></Link>
                 </li>
                 <li>
                     <Link to="/Projects">Projects</Link>
