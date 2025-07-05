@@ -1,5 +1,6 @@
 import styles from "./Home.module.css";
 import React, { useEffect } from "react";
+import ProjectSection from "./ProjectSection";
 
 function Home() {
   useEffect(() => {
@@ -48,14 +49,7 @@ function Home() {
       </div>
 
       <div className={styles.projectsDiv}>
-        <div className={styles.projectsBox}>{<p>Project List Placeholder</p>}</div>
-        <div className={styles.projectsText}>
-          <h2>Projects</h2>
-          <p>
-            Here you can find a list of my projects, including links to the
-            source code and live demos.
-          </p>
-        </div>
+        <ProjectSection />
       </div>
 
       <div className={styles.experienceDiv}>

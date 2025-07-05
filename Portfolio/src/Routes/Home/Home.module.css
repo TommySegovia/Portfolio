@@ -1,0 +1,116 @@
+.mainPage {
+    width: 100%;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.title{
+    margin: 0.5rem;
+    font-size: 4rem;
+}
+
+.nameText {
+    text-align: right;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+    opacity: 50%;
+}
+ 
+/* Grouped Styles */
+.projectsBox, .experienceBox, .skillsBox, .educationBox {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.projectsText, .experienceText, .skillsText, .educationText {
+    padding: 2rem;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    width: 40%;
+}
+
+.projectsText.visible, .experienceText.visible, .skillsText.visible, .educationText.visible,
+.projectsBox.visible, .experienceBox.visible, .skillsBox.visible, .educationBox.visible {
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.summaryDiv, .projectsDiv, .experienceDiv, .skillsDiv, .educationDiv {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+/* Projects Section */
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+}
+
+.projectsBox {
+    /* border: 2px solid red; */
+    transform: translateX(-50vw);
+}
+
+.projectsText {
+    transform: translateX(50vw);
+}
+
+/* Experience Section */
+
+.experienceBox {
+    border: 2px solid blue;
+    transform: translateX(50vw);
+}
+
+.experienceText {
+    transform: translateX(-50vw);
+}
+
+
+/* Skills Section */
+
+.skillsBox {
+    border: 2px solid green;
+    transform: translateX(-50vw);
+}
+
+.skillsText {
+    transform: translateX(50vw);
+}
+
+/* Education Section */
+
+.educationBox {
+    border: 2px solid purple;
+    transform: translateX(50vw);
+}
+
+.educationText {
+    transform: translateX(-50vw);
+}
