@@ -63,19 +63,8 @@ function Home() {
         <div className={styles.experienceBox}>{<p>Experience List Placeholder</p>}</div>
       </div>
 
-      <div className={styles.skillsDiv}>
-        <div className={styles.skillsBox}> {<p>Skills List Placeholder</p>}</div>
-
-        <div className={styles.skillsText}>
-          <h2>Skills</h2>
-          <p>
-            Here you can find a list of my skills, including links to resources
-            and projects that demonstrate my abilities.
-          </p>
-        </div>
-      </div>
-
       <div className={styles.educationDiv}>
+        <div className={styles.educationBox}>{<p>Education List Placeholder</p>}</div>
         <div className={styles.educationText}>
           <h2>Education</h2>
           <p>
@@ -83,7 +72,6 @@ function Home() {
             and projects I have completed.
           </p>
         </div>
-        <div className={styles.educationBox}>{<p>Education List Placeholder</p>}</div>
       </div>
     </div>
   );

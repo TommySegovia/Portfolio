@@ -11,6 +11,7 @@ html{
 .title{
     margin: 0.5rem;
     font-size: 4rem;
+    color: white;
 }
 
 .nameText {
@@ -20,11 +21,12 @@ html{
     color: white;
     margin: 0;
     font-size: 2rem;
-    opacity: 50%;
+    opacity: 70%;
+    padding-bottom: 30%;
 }
  
 /* Grouped Styles */
-.projectsBox, .experienceBox, .skillsBox, .educationBox {
+.projectsBox, .experienceBox, .educationBox {
     width: 40%;
     height: auto;
     display: flex;
@@ -37,7 +39,7 @@ html{
     opacity: 0;
 }
 
-.projectsText, .experienceText, .skillsText, .educationText {
+.projectsText, .experienceText, .educationText {
     padding: 2rem;
     transform: scale(0);
     transition: all 1s ease-in-out;
@@ -45,14 +47,14 @@ html{
     width: 40%;
 }
 
-.projectsText.visible, .experienceText.visible, .skillsText.visible, .educationText.visible,
-.projectsBox.visible, .experienceBox.visible, .skillsBox.visible, .educationBox.visible {
+.projectsText.visible, .experienceText.visible, .educationText.visible,
+.projectsBox.visible, .experienceBox.visible, .educationBox.visible {
     transform: scale(1);
     transform: translateX(0);
     opacity: 1;
 }
 
-.summaryDiv, .projectsDiv, .experienceDiv, .skillsDiv, .educationDiv {
+.summaryDiv, .projectsDiv, .experienceDiv, .educationDiv {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -92,25 +94,13 @@ html{
     transform: translateX(-50vw);
 }
 
-
-/* Skills Section */
-
-.skillsBox {
-    border: 2px solid green;
-    transform: translateX(-50vw);
-}
-
-.skillsText {
-    transform: translateX(50vw);
-}
-
 /* Education Section */
 
 .educationBox {
     border: 2px solid purple;
-    transform: translateX(50vw);
+    transform: translateX(-50vw);
 }
 
 .educationText {
-    transform: translateX(-50vw);
+    transform: translateX(50vw);
 }

@@ -5,11 +5,12 @@ function Arrows() {
   useEffect(() => {
     const handleScroll = () => {
       const downArrow = document.querySelector(`.${styles.downArrow}`);
+      const pageWindowHeight = 3; // Number of screens to consider for the down arrow visibility
       if (downArrow) {
         const scrollPosition = window.scrollY;
         const windowHeight = window.innerHeight;
         const mod = (scrollPosition % windowHeight + windowHeight) % windowHeight;
-        if (mod <= 0.1 * windowHeight && scrollPosition < 4 * windowHeight) {  // Show arrow if within the first 4 screens
+        if (mod <= 0.1 * windowHeight && scrollPosition < pageWindowHeight * windowHeight) {
           downArrow.classList.add(styles.visible);
         } else {
           downArrow.classList.remove(styles.visible);

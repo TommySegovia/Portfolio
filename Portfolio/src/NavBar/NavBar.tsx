@@ -15,9 +15,6 @@ function NavBar(){
                     <Link to="/Experience">Experience</Link>
                 </li>
                 <li>
-                    <Link to="/Skills">Skills</Link>
-                </li>
-                <li>
                     <Link to="/Education">Education</Link>
                 </li>
             </ul>
