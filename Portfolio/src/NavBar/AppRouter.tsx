@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from '../Routes/Home/Home';
-import Projects from '../Routes/Projects';
-import Education from '../Routes/Education';
-import Experience from '../Routes/Experience';
+import Projects from '../Routes/Projects/Projects';
+import Education from '../Routes/Education/Education';
+import Experience from '../Routes/Experience/Experience';
 import Arrows from '../UI/Arrows';
 
 function AppRouter() {

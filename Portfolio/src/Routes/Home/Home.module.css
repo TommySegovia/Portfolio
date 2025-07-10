@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .mainPage {
     width: 100%;
 }
@@ -39,16 +43,35 @@ html{
     opacity: 0;
 }
 
+.educationTextColumn, .experienceTextColumn {
+    width: 40%;
+
+}
+
 .projectsText, .experienceText, .educationText {
     padding: 2rem;
     transform: scale(0);
     transition: all 1s ease-in-out;
     opacity: 0;
     width: 40%;
+    border-radius: 8px;
+}
+
+.educationList, .experienceList {
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: left;
+    padding: 2rem;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    border-radius: 8px;
 }
 
 .projectsText.visible, .experienceText.visible, .educationText.visible,
-.projectsBox.visible, .experienceBox.visible, .educationBox.visible {
+.projectsBox.visible, .experienceBox.visible, .educationBox.visible,
+.educationList.visible, .experienceList.visible {
     transform: scale(1);
     transform: translateX(0);
     opacity: 1;
@@ -81,26 +104,60 @@ html{
 
 .projectsText {
     transform: translateX(50vw);
+    background-color: #ff8800;
 }
 
 /* Experience Section */
 
+.experienceImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+}
+
 .experienceBox {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     transform: translateX(50vw);
 }
 
 .experienceText {
     transform: translateX(-50vw);
+    background-color: rgb(0, 193, 161);
+    width: 100%;
+}
+
+.experienceList {
+    transform: translateX(-50vw);
+    background-color: rgb(68, 68, 68);
 }
 
 /* Education Section */
 
+.educationImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+}
+
 .educationBox {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     transform: translateX(-50vw);
 }
 
+
 .educationText {
     transform: translateX(50vw);
+    background-color: rgb(167, 0, 0);
+    width: 100%;
+}
+
+.educationList {
+    transform: translateX(50vw);
+    background-color: rgb(68, 68, 68);
 }
