@@ -1,0 +1,111 @@
+.mainPage {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/wenatchee_river.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.peakPalsCard {
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    box-shadow: rgb(119, 119, 119) 0px 2px 5px;
+    backdrop-filter: blur(10px);
+    width: 75%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.peakPalsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 20%;
+}
+
+.peakPalsTitle {
+    width: 80%;
+}
+
+.peakPalsGithubLink {
+    width: 20%;
+}
+
+.peakPalsBody {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.peakPalsImage1,
+.peakPalsImage2,
+.peakPalsImage3 {
+    width: 100%;
+    height: auto;
+    object-fit: stretch;
+    border-radius: 10px;
+
+}
+
+.peakPalsImage1Div,
+.peakPalsImage2Div,
+.peakPalsImage3Div {
+    width: 100%;
+    height: 300px;
+
+}
+
+@media (max-width: 1300px) {
+    .peakPalsBody {
+        flex-wrap: wrap;
+
+    }
+    .peakPalsImage1Div,
+    .peakPalsImage2Div,
+    .peakPalsImage3Div {
+        height: auto;
+    }
+}
+
+.peakPalsSkills{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.peakPalsTechnicalSkills {
+    width: 50%;
+    text-align: center;
+}
+.peakPalsFunctionalSkills {
+    width: 50%;
+    text-align: center;
+}
+
+.col1,
+.col2,
+.col3 {
+    width: 100%;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #cc9c00;
+}
