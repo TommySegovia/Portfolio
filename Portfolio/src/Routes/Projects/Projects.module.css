@@ -1,48 +1,47 @@
 .mainPage {
     width: 100%;
     min-height: 100vh;
-    height: 100%;
-    display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
     background-image: url('/assets/wenatchee_river.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
 
 .peakPalsCard {
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
     box-shadow: rgb(119, 119, 119) 0px 2px 5px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px) brightness(120%);
     width: 75%;
     border-radius: 20px;
-    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    height: fit-content;
 }
 
-.peakPalsHeader {
-    display: flex;
-    justify-content: center;
+.peakPalsHeader{
+    
     align-items: center;
-    width: 100%;
-    padding-left: 20%;
 }
 
-.peakPalsTitle {
-    width: 80%;
+.title {
+    text-align: center;
+    margin: 40px 0;
+    color: white;
 }
 
-.peakPalsGithubLink {
-    width: 20%;
+.subtitle {
+    text-align: center;
+    margin: 10px 0;
+    color: white;
 }
 
-.peakPalsBody {
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
+.gitHubLink{
+    text-align: center;
+    margin: 40px 0;
+    color: white;
+    text-decoration: none;
 }
 
 .peakPalsImage1,
@@ -50,62 +49,64 @@
 .peakPalsImage3 {
     width: 100%;
     height: auto;
-    object-fit: stretch;
-    border-radius: 10px;
-
+    border-radius: 20px;
 }
 
-.peakPalsImage1Div,
-.peakPalsImage2Div,
-.peakPalsImage3Div {
-    width: 100%;
-    height: 300px;
-
+.peakPalsImageContainer{
+    height:270px;
 }
 
-@media (max-width: 1300px) {
-    .peakPalsBody {
-        flex-wrap: wrap;
-
-    }
-    .peakPalsImage1Div,
-    .peakPalsImage2Div,
-    .peakPalsImage3Div {
-        height: auto;
+@media (max-width: 1600px) {
+    .peakPalsImageContainer {
+        height: 230px;
     }
 }
+@media (max-width: 1400px) {
+    .peakPalsImageContainer {
+        height: 320px;
+    }
+}
+@media (max-width: 1200px) {
+    .peakPalsImageContainer {
+        height: 260px;
+    }
+}
+@media (max-width: 992px) {
+    .peakPalsImageContainer {
+        height: 460px;
+    }
+}
+@media (max-width: 768px) {
+    .peakPalsImageContainer {
+        height: 360px;
+    }
+}
+@media (max-width: 576px) {
+    .peakPalsImageContainer {
+        height: 250px;
+    }
+}
 
-.peakPalsSkills{
-    display: flex;
+p,li{
+    color: rgb(197, 197, 197);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0;
+    text-align: center;
+}
+
+.peakPalsCol{
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(197, 197, 197);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.peakPalsRow{
     justify-content: center;
-    margin-top: 1rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.peakPalsTechnicalSkills {
-    width: 50%;
-    text-align: center;
-}
-.peakPalsFunctionalSkills {
-    width: 50%;
-    text-align: center;
-}
-
-.col1,
-.col2,
-.col3 {
-    width: 100%;
-    min-width: 300px;
-    padding: 1rem;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    color: #cc9c00;
 }

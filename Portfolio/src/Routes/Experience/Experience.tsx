@@ -1,6 +1,6 @@
 import Styles from "./Experience.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import {Container, Row, Col } from "react-bootstrap";
 function Experience() {
   return (
     <div className={Styles.mainPage}>
