@@ -1,0 +1,53 @@
+.mainPage {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('/assets/buttermilks.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mainCard {
+    box-shadow: rgb(119, 119, 119) 0px 2px 5px;
+    backdrop-filter: blur(50px) brightness(50%);
+    width: 75%;
+    border-radius: 20px;
+    margin-top: 5%;
+    height: fit-content;
+}
+
+.title {
+    text-align: center;
+    margin: 40px 0;
+    color: white;
+}
+.subtitle {
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+.experienceSection {
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(197, 197, 197);
+    background-color: rgba(95, 87, 104, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.skillsSection {
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(197, 197, 197);
+    background-color: rgba(95, 87, 104, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.highlight{
+    color: rgb(50, 248, 255);
+}
