@@ -1,8 +1,4 @@
 import styles from "./Home.module.css";
-import React, { useEffect } from "react";
-import ProjectSection from "./ProjectSection";
-import ExperienceSection from "./ExperienceSection";
-import EducationSection from "./EducationSection";
 
 function Home() {
 
@@ -11,20 +7,8 @@ function Home() {
       <div className={styles.summaryDiv}>
         <div>
           <h1 className={styles.title}>Welcome to my Portfolio</h1>
-          <h2 className={styles.nameText}>Tommy Segovia</h2>
+          <h2 className={styles.introText}>My name is Tommy Segovia and I'm an AI & Software Engineer with a passion for learning new & existing technologies</h2>
         </div>
-      </div>
-
-      <div className={styles.projectsDiv}>
-        <ProjectSection />
-      </div>
-
-      <div className={styles.experienceDiv}>
-        <ExperienceSection />
-      </div>
-
-      <div className={styles.educationDiv}>
-        <EducationSection />
       </div>
     </div>
   );

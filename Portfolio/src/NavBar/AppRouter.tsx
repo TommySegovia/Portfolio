@@ -4,13 +4,11 @@ import Home from '../Routes/Home/Home';
 import Projects from '../Routes/Projects/Projects';
 import Education from '../Routes/Education/Education';
 import Experience from '../Routes/Experience/Experience';
-import Arrows from '../UI/Arrows';
 
 function AppRouter() {
   return (
     <Router>
       <NavBar />
-      <Arrows />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />

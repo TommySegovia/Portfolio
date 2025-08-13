@@ -6,158 +6,27 @@
     width: 100%;
 }
 
-html{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
 .title{
     margin: 0.5rem;
     font-size: 4rem;
     color: white;
+    text-shadow: 3px 3px rgb(36, 36, 36);
 }
 
-.nameText {
+.introText {
     text-align: right;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 30%;
+    padding-left: 30%;
     color: white;
-    margin: 0;
     font-size: 2rem;
     opacity: 70%;
-    padding-bottom: 30%;
-}
- 
-/* Grouped Styles */
-.projectsBox, .experienceBox, .educationBox {
-    width: 40%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    transform: scale(0);
-    transition: all 1s ease-in-out;
-    opacity: 0;
+    text-shadow: 3px 3px rgb(36, 36, 36);
 }
 
-.educationTextColumn, .experienceTextColumn {
-    width: 40%;
-
-}
-
-.projectsText, .experienceText, .educationText {
-    padding: 2rem;
-    transform: scale(0);
-    transition: all 1s ease-in-out;
-    opacity: 0;
-    width: 40%;
-    border-radius: 8px;
-}
-
-.educationList, .experienceList {
-    width: 70%;
-    margin: auto;
-    margin-top: 2rem;
-    text-align: left;
-    padding: 2rem;
-    transform: scale(0);
-    transition: all 1s ease-in-out;
-    opacity: 0;
-    border-radius: 8px;
-}
-
-.projectsText.visible, .experienceText.visible, .educationText.visible,
-.projectsBox.visible, .experienceBox.visible, .educationBox.visible,
-.educationList.visible, .experienceList.visible {
-    transform: scale(1);
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.summaryDiv, .projectsDiv, .experienceDiv, .educationDiv {
+.summaryDiv{
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-}
-
-/* Projects Section */
-
-.projectImage {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  padding: 0;
-  margin: 0;
-}
-
-.projectsBox {
-    /* border: 2px solid red; */
-    transform: translateX(-50vw);
-}
-
-.projectsText {
-    transform: translateX(50vw);
-    background-color: #ff8800;
-}
-
-/* Experience Section */
-
-.experienceImage {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 0;
-    margin: 0;
-}
-
-.experienceBox {
-    /* border: 2px solid blue; */
-    transform: translateX(50vw);
-}
-
-.experienceText {
-    transform: translateX(-50vw);
-    background-color: rgb(0, 193, 161);
-    width: 100%;
-}
-
-.experienceList {
-    transform: translateX(-50vw);
-    background-color: rgb(68, 68, 68);
-}
-
-/* Education Section */
-
-.educationImage {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 0;
-    margin: 0;
-}
-
-.educationBox {
-    /* border: 2px solid purple; */
-    transform: translateX(-50vw);
-}
-
-
-.educationText {
-    transform: translateX(50vw);
-    background-color: rgb(167, 0, 0);
-    width: 100%;
-}
-
-.educationList {
-    transform: translateX(50vw);
-    background-color: rgb(68, 68, 68);
+    padding-top: 100px;
 }
