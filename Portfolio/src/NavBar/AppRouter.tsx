@@ -4,6 +4,7 @@ import Home from '../Routes/Home/Home';
 import Projects from '../Routes/Projects/Projects';
 import Education from '../Routes/Education/Education';
 import Experience from '../Routes/Experience/Experience';
+import Footer from '../Footer/Footer';
 
 function AppRouter() {
   return (
@@ -15,6 +16,7 @@ function AppRouter() {
         <Route path="/Education" element={<Education />} />
         <Route path="/Experience" element={<Experience />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

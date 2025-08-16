@@ -8,6 +8,7 @@
     background-image: url('/assets/little_cottonwood_canyon.jfif');
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 70px;
 }
 
 .mainCard {

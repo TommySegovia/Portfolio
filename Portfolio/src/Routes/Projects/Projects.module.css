@@ -8,6 +8,7 @@
     background-image: url('/assets/wenatchee_river.jpg');
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 70px;
 }
 
 .peakPalsCard {

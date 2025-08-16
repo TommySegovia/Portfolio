@@ -6,15 +6,15 @@ function NavBar(){
         <nav>
             <ul className="navbar-list">
                 <li className="navbar-home">
-                    <Link to="/"><img src="/public/assets/home.png" alt="" className="home-icon"/></Link>
+                    <Link to="/" className="navbar-home-text">Tommy Segovia</Link>
                 </li>
-                <li>
+                <li className="navbar-projects">
                     <Link to="/Projects">Projects</Link>
                 </li>
-                <li>
+                <li className="navbar-experience">
                     <Link to="/Experience">Experience</Link>
                 </li>
-                <li>
+                <li className="navbar-education">
                     <Link to="/Education">Education</Link>
                 </li>
             </ul>
