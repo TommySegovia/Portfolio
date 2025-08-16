@@ -2,6 +2,10 @@
 
 This repository contains the source code for my personal portfolio website, showcasing my work in **Software Engineering** and **AI Engineering**. The site highlights my skills, projects, experience, and background in building intelligent systems and full-stack applications.
 
+## 🌐 Live Demo
+
+**[View Portfolio](https://portfolio-je8kghy70-tommysegovias-projects.vercel.app/)**
+
 ## 🚀 Features & Points of Interest
 
 - **About Me** – Introduction and professional background  
