@@ -31,7 +31,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #b4b4b4;
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 5px;
 }
 
 .navbar-list {

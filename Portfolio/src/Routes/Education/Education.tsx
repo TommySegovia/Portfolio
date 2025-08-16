@@ -10,8 +10,8 @@ function Education(){
                         <Col>
                             <h1 className={Style.title}>Education </h1>
                             <h3 className={Style.subInfo}>
-                                <BsMortarboardFill /> Bachelor of Science in Computer Science <br></br>
-                                <span style={{color: 'orange'}}>3.65 GPA - Honor Student: Magna Cum Laude</span>
+                                <span className={Style.icon}><BsMortarboardFill /></span> Bachelor of Science in Computer Science <br></br>
+                                <span className={Style.highlight}>3.65 GPA - Honor Student: Magna Cum Laude</span>
                             </h3>
                         </Col>
                     </Row>

@@ -56,3 +56,10 @@
     position: relative;
     bottom: 3px;
 }
+
+.footerLinkedInText:hover,
+.footerGithubText:hover,
+.footerResumeText:hover{
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 5px;
+}

@@ -56,3 +56,12 @@
     border-radius: 20px;
     padding: 20px;
 }
+
+.icon {
+    position: relative;
+    bottom: 3px;
+}
+
+.highlight {
+    color: orange;
+}

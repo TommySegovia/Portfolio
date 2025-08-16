@@ -45,6 +45,11 @@
     text-decoration: none;
 }
 
+.gitHubLink:hover{
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 5px;
+}
+
 .peakPalsImage1,
 .peakPalsImage2,
 .peakPalsImage3 {
