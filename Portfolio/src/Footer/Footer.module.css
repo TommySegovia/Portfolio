@@ -42,7 +42,6 @@
 }
 
 .footerCopyrightText {
-    margin-left: 2rem;
     font-size: 1rem;
 }
 
@@ -60,6 +59,18 @@
 .footerLinkedInText:hover,
 .footerGithubText:hover,
 .footerResumeText:hover{
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 5px;
+}
+
+.footerEmailText {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.footerEmailText:hover {
     color: #ffffff;
     text-shadow: #ffffff 0px 0px 5px;
 }
