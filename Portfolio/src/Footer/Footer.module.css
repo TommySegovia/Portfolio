@@ -6,49 +6,36 @@
     bottom: 0;
     left: 0;
     right: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.footerContent {
+.footerRightsText {
+    text-align: left;
+}
+
+@media (max-width: 1320px) {
+    .footerRightsText {
     text-align: center;
-    padding: 1rem;
+    }
+}
+.footerRowContent {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
+    padding: 0.1rem 2rem;
+    white-space: nowrap;
+    justify-content: space-between;
 }
 
 .footerLinkedInText,
 .footerGithubText,
 .footerResumeText,
 .footerCopyrightText,
-.footerRightsText {
+.footerRightsText,
+.footerEmailText {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.footerLinkedInText {
-    margin-left: 2rem;
-}
-
-.footerGithubText{
-    margin-left: auto;
-}
-
-
-.footerResumeText {
-    margin-left: 2rem;
-}
-
-.footerCopyrightText {
-    font-size: 1rem;
-}
-
-.footerRightsText{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .bootstrapIcon{
@@ -58,19 +45,8 @@
 
 .footerLinkedInText:hover,
 .footerGithubText:hover,
-.footerResumeText:hover{
-    color: #ffffff;
-    text-shadow: #ffffff 0px 0px 5px;
-}
-
-.footerEmailText {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-}
-
-.footerEmailText:hover {
+.footerResumeText:hover,
+.footerEmailText:hover{
     color: #ffffff;
     text-shadow: #ffffff 0px 0px 5px;
 }
