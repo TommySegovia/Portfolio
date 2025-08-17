@@ -20,7 +20,7 @@ function Footer() {
                     <a href="https://github.com/TommySegovia" target="_blank" rel="noopener noreferrer" className={Style.footerGithubText}>Github <span className={Style.bootstrapIcon}><BsGithub /></span></a>
                 </Col>
                 <Col md={1} sm={2} xs={12}>
-                    <a href="/public/assets/Tommy_Segovia_Resume_Aug_2025.pdf" target="_blank" rel="noopener noreferrer" className={Style.footerResumeText}>Resume <span className={Style.bootstrapIcon}><BsFileEarmarkPdf/></span></a>
+                    <a href="/assets/Tommy_Segovia_Resume_Aug_2025.pdf" target="_blank" rel="noopener noreferrer" className={Style.footerResumeText}>Resume <span className={Style.bootstrapIcon}><BsFileEarmarkPdf/></span></a>
                 </Col>
                 <Col md={1} sm={2} xs={12}>
                     <a href="https://www.linkedin.com/in/tommy-segovia-298aa4259/" target="_blank" rel="noopener noreferrer" className={Style.footerLinkedInText}>LinkedIn <span className={Style.bootstrapIcon}><BsLinkedin /></span></a>
