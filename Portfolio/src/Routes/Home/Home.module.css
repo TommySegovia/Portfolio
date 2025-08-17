@@ -30,3 +30,14 @@
     justify-content: center;
     padding-top: 100px;
 }
+
+@media (max-width: 768px) {
+    /* 
+    .mainPage{
+        min-height: fit-content;
+        padding-bottom: 180px;
+    } */
+    .introText{
+        padding: 0 10%;
+    }
+}

@@ -93,6 +93,13 @@
     }
 }
 
+@media (max-width: 650px) {
+    .mainPage{
+        min-height: fit-content;
+        padding-bottom: 180px;
+    }
+}
+
 p,li{
     color: rgb(197, 197, 197);
 }

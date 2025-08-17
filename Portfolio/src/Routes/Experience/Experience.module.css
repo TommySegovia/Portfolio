@@ -52,3 +52,9 @@
 .highlight{
     color: rgb(50, 248, 255);
 }
+@media (max-width: 650px) {
+    .mainPage{
+        min-height: fit-content;
+        padding-bottom: 180px;
+    }
+}
