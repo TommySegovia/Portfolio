@@ -3,7 +3,7 @@ import {BsGithub} from "react-icons/bs";
 import { BsLinkedin } from 'react-icons/bs';
 import { BsFileEarmarkPdf } from 'react-icons/bs';
 import { BsEnvelope } from 'react-icons/bs';
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 function Footer() {
     return (
