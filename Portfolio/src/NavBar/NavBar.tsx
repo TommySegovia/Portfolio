@@ -1,23 +1,25 @@
-import "./NavBar.css";
+
 import { Link } from "react-router-dom";
+import {Row, Col} from "react-bootstrap";
+import styles from "./NavBar.module.css";
 
 function NavBar(){
     return(
         <nav>
-            <ul className="navbar-list">
-                <li className="navbar-home">
-                    <Link to="/" className="navbar-home-text">Tommy Segovia</Link>
-                </li>
-                <li className="navbar-projects">
-                    <Link to="/Projects">Projects</Link>
-                </li>
-                <li className="navbar-experience">
-                    <Link to="/Experience">Experience</Link>
-                </li>
-                <li className="navbar-education">
-                    <Link to="/Education">Education</Link>
-                </li>
-            </ul>
+            <Row className={styles.navbarRowContent}>
+                <Col xl={6} lg={4} md={3} xs={6}  className={styles.navbarHomeCol}>
+                    <Link to="/" className={styles.navbarHomeText}>Tommy Segovia</Link>
+                </Col>
+                <Col lg={2} md={3} xs={6}>
+                    <Link to="/Projects" className={styles.navbarProjectsText}>Projects</Link>
+                </Col>
+                <Col lg={2} md={3} xs={6}>
+                    <Link to="/Experience" className={styles.navbarExperienceText}>Experience</Link>
+                </Col>
+                <Col lg={2} md={3} xs={6}>
+                    <Link to="/Education" className={styles.navbarEducationText}>Education</Link>
+                </Col>
+            </Row>
         </nav>
     )
 }
