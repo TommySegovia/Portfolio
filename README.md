@@ -4,7 +4,7 @@ This repository contains the source code for my personal portfolio website, show
 
 ## 🌐 Live Demo
 
-**[View Portfolio](https://portfolio-je8kghy70-tommysegovias-projects.vercel.app/)**
+**[View Portfolio](https://portfolio-pi-ashen-5krtv865pp.vercel.app/)**
 
 ## 🚀 Features & Points of Interest
 
